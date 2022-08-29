@@ -11,5 +11,7 @@
             "email": "jhonycreativo.code@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "illuminate/support": "^8.83"
+    }
 }
