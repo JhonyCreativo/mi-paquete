@@ -1,0 +1,15 @@
+{
+    "name": "jhonycreativo/mipaquete",
+    "autoload": {
+        "psr-4": {
+            "Jhonycreativo\\Mipaquete\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jhony Creativo",
+            "email": "jhonycreativo.code@gmail.com"
+        }
+    ],
+    "require": {}
+}
