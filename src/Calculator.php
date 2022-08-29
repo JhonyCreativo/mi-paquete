@@ -7,4 +7,7 @@ class Calculator
     {
         return $a + $b;
     }
+    public function hola(){
+        return "hola";
+    }
 }
