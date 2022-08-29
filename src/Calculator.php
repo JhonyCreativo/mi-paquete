@@ -10,11 +10,11 @@ class Calculator
     public function hola(){
         return "hola";
     }
-    public function GroupAndSum($value = null,$param=null,$param2=null){
+    public function GroupAndSum($list = null,$param=null,$param2=null){
         $data = collect($list);
-        $data = $data->groupBy($param)->map(function ($item) {
+        $data = $data->groupBy($param)->map(function ($item) use ($param2)  {
             if ($item->count() > 1) {
-                $item = $item->slice(0, 1)->map(function($subItem) use ($item) {
+                $item = $item->slice(0, 1)->map(function($subItem) use ($item,$param2) {
                     $subItem[$param2] = $item->sum($param2);
 
                     return $subItem;
